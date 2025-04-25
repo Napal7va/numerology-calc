@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/main.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="cover cover__black">
+        <div class="banner">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+                <h1 class="logo__title">Champagne o’clock</h1>
+            </div>
+            <div class="tg_button">
+                <a href="https://t.me/ChampagneOclock">
+                    <h2>подписаться</h2>
+                    <img src="/assets/img/tg.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div class="calc">
+            <div class="calc__day">
+                <p>День</p>
+                <input class="day__input" type="tel" pattern="[0-9]*" inputmode="numeric" min="1" max="31" placeholder="выберите день">
+            </div>
+
+            <div class="calc__month">
+                <p>Месяц</p>
+                <input class="month__input" type="tel" pattern="[0-9]*" inputmode="numeric" min="1" max="12" placeholder="выберите месяц">
+            </div>
+            <div class="calc__year">
+                <p>Год</p>
+                <input class="year__input" type="tel" pattern="[0-9]*" inputmode="numeric" min="1900" max="2025" placeholder="выберите год">
+            </div>
+            <button>Рассчитать</button>
+            <span class="error-message"></span>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td id="additionalNumbers" colspan="2">Доп. числа <br><span class="bold"></span></td>
+                    <td id="destinyNumber" >Число судьбы <br><span class="bold"></span></td>
+                    <td id="temperament">Темперамент <br><span class="bold"></span></td>
+                </tr>
+                <tr>
+                    <td id="character">Характер <br><span class="bold"></span></td>
+                    <td id="health">Здоровье <br><span class="bold"></span></td>
+                    <td id="lucky">Удача <br><span class="bold"></span></td>
+                    <td id="goal">Цель <br><span class="bold"></span></td>
+                </tr>
+                <tr>
+                    <td id="energy">Энергия <br><span class="bold"></span></td>
+                    <td id="logic">Логика <br><span class="bold"></span></td>
+                    <td id="dolg">Долг<br> <span class="bold"></span></td>
+                    <td id="family">Семья <br><span class="bold"></span></td>
+                </tr>
+                <tr>
+                    <td id="interest">Интерес <br><span class="bold"></span></td>
+                    <td id="work">Труд <br><span class="bold"></span></td>
+                    <td id="memory">Память <br><span class="bold"></span></td>
+                    <td id="habits">Привычки <br><span class="bold"></span></td>
+                </tr>
+                <tr>
+                    <td class="no_border"></td>
+                    <td id="everydayLife">Быт <br><span class="bold"></span></td>
+                    <td class="no_border" colspan="2">
+                    </td>
+                </tr>
+            </table>
+<!--            <div class="copy" id="additionalNumbers">-->
+<!--                <span  class="copy__text">11/22/3/444/-/-/-/-/99;ЧС:4</span>-->
+<!--                <img src="assets/img/copy.svg">-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="matrix.js"></script>
+
+</body>
+</html>

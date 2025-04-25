@@ -1,0 +1,471 @@
+@import url("fonts.css");
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #262626;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.9375rem;
+}
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62vw;
+    height: 100%;
+    background: #ffffff;
+    margin: 20px 50px 0px 50px;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.cover__black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    flex-direction: row;
+    .logo__title{
+        color: #fff;
+    }
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.9375rem;
+    gap: 1.25rem;
+    h1{
+        margin-top: 5px;
+        display: flex;
+        font-family: "PF BeauSans Pro";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+}
+.logo__title{
+    margin-left: 11px;
+}
+
+.tg_button{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 35px;
+    padding: 6px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #2B9BFF;
+    color: #FFF;
+    font-family: "PF BeauSans Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.copy__text{
+    text-align: center;
+    font-family: "PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.calc{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 5vh;
+    margin-top: 30px;
+    p{
+        margin-left: 16px;
+    }
+    input{
+        margin-top: 12px;
+        width: 238px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        height: 20px;
+        padding: 10px 16px;
+    }
+    button{
+        display: flex;
+        width: 140px;
+        height: 40px;
+        padding: 10px 25px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        background-color: #FFE23B;
+        border-radius: 20px;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.table-container {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,td {
+    vertical-align: top;
+    font-family: "Montserrat";
+    border: 1px solid #000;
+    color: #A7A7A7;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.5625em;
+}
+
+.no_border {
+    border: none;
+}
+
+.bold {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+}
+
+.copy{
+    padding: 0 !important;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    img{
+        cursor: pointer;
+    }
+}
+@media (max-width: 1280px) {
+
+    .banner{
+        justify-content: space-between;
+        width: 590px;
+    }
+    .cover {
+        width: 64vw;
+    }
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+
+    .wrapper{
+        margin: 0 50px 0 50px;
+    }
+    .banner{
+        justify-content: space-between;
+        width: 423px;
+        height: 15.625vw;
+        h1{
+            font-size: 1rem;
+        }
+    }
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 0.6882352941em;
+
+    }
+}
+@media (max-width: 680px) {
+    .banner{
+        justify-content: space-between;
+        width: 423px;
+        height: 6.625vw;
+        h1{
+            font-size: 1rem;
+        }
+    }
+    .logo{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .logo__title{
+        font-size: 20px;
+    }
+
+    .cover {
+        width: 82vw;
+    }
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td {
+        border: 1px solid black;
+        font-size: 0.7882352941em;
+    }
+    .tg_button{
+        display: flex;
+        flex-direction: row;
+        width: 8.125rem;
+        height: 25px;
+        padding: 6px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #2B9BFF;
+        color: #FFF;
+        font-family: "PF BeauSans Pro";
+        font-size: 0.6882352941em;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .bold {
+        font-size: 26px;
+        margin-top: 8px;
+    }
+    .calc{
+        input{
+            width: 389px;
+
+        }
+    }
+}
+@media (max-width: 560px) {
+    .cover {
+        width: 84vw;
+        margin: 20px 50px 0px 50px;
+        padding: 0 10px;
+
+    }
+    table {
+        border-collapse: collapse;
+        width: 356px;
+        text-align: center;
+    }
+    th, td {
+        height: 60px;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 0.5882352941em;
+    }
+    .calc{
+        input{
+            width: 361px;
+
+        }
+    }
+
+    .calc{
+        input{
+            width: 322px;
+        }
+    }
+    .tg_button{
+        font-size: 0.5882352941em;
+    }
+}
+@media (max-width: 460px) {
+    .cover {
+        width: 84vw;
+        margin: 20px 50px 0px 50px;
+        padding: 0 10px;
+
+    }
+    .banner{
+        width: 331px;
+    }
+    .logo{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .logo__title{
+        margin-left: 11px;
+        font-size: 26px;
+    }
+    .tg_button{
+        img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th, td {
+        height: 50px;
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 0.4352941em;
+        white-space: nowrap;
+    }
+    .copy{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 16px;
+        img{
+            width: 10px;
+        }
+    }
+    .calc{
+        input{
+            width: 24.296875vw;
+        }
+    }
+    .copy__text{
+        text-align: center;
+        font-family: "PF BeauSans Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+    .banner{
+        h1{
+            font-size: 14px;
+        }
+    }
+    .tg_button{
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        height: 25px;
+        padding: 5px 13px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #2B9BFF;
+        color: #FFF;
+        h2{
+            font-family: "PF BeauSans Pro";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .banner{
+        width: 300px;
+        h1 {
+            font-size: 12px;
+        }
+    }
+    table {
+        border-collapse: collapse;
+        width: 300px;
+        text-align: center;
+    }
+
+    .tg_button{
+        width: 80px;
+        height: 20px;
+        padding: 3px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #2B9BFF;
+        color: #FFF;
+        h2{
+            font-family: "PF BeauSans Pro";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .calc{
+        input{
+            width: 266px;
+        }
+    }
+    .th .th{
+        display: flex;
+        justify-content: center;
+        font-size: 0.42352941em;
+    }
+    .bold {
+        font-size: 16px;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.day__input.error,
+.month__input.error,
+.year__input.error {
+    border: 1px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Стили для отключённой кнопки */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
